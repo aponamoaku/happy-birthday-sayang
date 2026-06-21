@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(120,0,20,.15),
+        transparent 50%
+    ),
+    #050505;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-family:'Cormorant Garamond', serif;
+
+    overflow:hidden;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero{
+    text-align:center;
+    max-width:700px;
+    padding:20px;
+}
+
+.date{
+    color:#bfa27a;
+    letter-spacing:5px;
+    font-size:1rem;
+}
+
+.hero h1{
+    margin-top:20px;
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes', cursive;
+
+    text-shadow:
+        0 0 10px rgba(179,0,32,.4),
+        0 0 25px rgba(179,0,32,.3);
+}
+
+.hero p{
+    margin-top:20px;
+
+    line-height:1.8;
+
+    color:#d8d8d8;
+
+    font-size:1.2rem;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+button{
+    margin-top:40px;
+
+    padding:16px 40px;
+
+    border:1px solid #b30020;
+
+    background:transparent;
+
+    color:white;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+button:hover{
+
+    background:#b30020;
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(179,0,32,.5),
+        0 0 40px rgba(179,0,32,.3);
+}
+
+/* ========================= */
+/* ROSE ANIMATION */
+/* ========================= */
+
+.petals::before,
+.petals::after{
+    content:"🌹";
+
+    position:absolute;
+
+    font-size:30px;
+
+    animation:fall 12s linear infinite;
+}
+
+.petals::before{
+    left:20%;
+}
+
+.petals::after{
+    left:80%;
+    animation-delay:5s;
+}
+
+@keyframes fall{
+
+    from{
+        transform:
+            translateY(-100px)
+            rotate(0deg);
+    }
+
+    to{
+        transform:
+            translateY(120vh)
+            rotate(360deg);
+    }
+
+}
+
+/* ========================= */
+/* LETTER CARD */
+/* ========================= */
+
+.letter-card{
+    width:min(900px, 90vw);
+
+    padding:60px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 0 30px rgba(179,0,32,.15);
+}
+
+.letter-card h1{
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes', cursive;
+
+    text-shadow:
+        0 0 10px rgba(179,0,32,.4),
+        0 0 25px rgba(179,0,32,.3);
+
+    margin-bottom:30px;
+}
+
+.letter-card p{
+
+    color:#d8d8d8;
+
+    font-size:1.2rem;
+
+    line-height:2;
+    .letter-card p{
+    max-width:700px;
+    margin:auto;
+
+    color:#d8d8d8;
+
+    font-size:1.3rem;
+
+    line-height:2;
+    /* ========================= */
+/* TIMELINE */
+/* ========================= */
+
+.timeline-container{
+    width:90%;
+    max-width:1000px;
+}
+
+.timeline-container h1{
+    text-align:center;
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes', cursive;
+
+    margin-bottom:60px;
+
+    text-shadow:
+        0 0 10px rgba(179,0,32,.4),
+        0 0 25px rgba(179,0,32,.3);
+}
+
+.timeline{
+    position:relative;
+
+    margin:0 auto;
+
+    width:80%;
+}
+
+.timeline::before{
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+
+    background:#b30020;
+}
+
+.timeline-item{
+    position:relative;
+
+    padding-left:70px;
+
+    margin-bottom:50px;
+}
+
+.dot{
+    width:18px;
+    height:18px;
+
+    background:#b30020;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:12px;
+
+    top:10px;
+
+    box-shadow:
+        0 0 15px rgba(179,0,32,.8);
+}
+
+.content{
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+}
+
+.content h2{
+    color:#d4002f;
+
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#ddd;
+    line-height:1.8;
+}
+}
+}
+.gallery-page{
+
+    width:100%;
+    min-height:100vh;
+
+    padding:100px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:80px;
+
+    overflow-y:auto;
+}
+
+.gallery-page h1{
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes', cursive;
+
+    text-shadow:
+    0 0 15px rgba(179,0,32,.5);
+}
+
+.polaroid{
+
+    width:350px;
+
+    background:white;
+
+    padding:15px 15px 60px;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.4);
+
+    transform:rotate(-3deg);
+
+    transition:.4s;
+}
+
+.polaroid:hover{
+
+    transform:
+    rotate(0deg)
+    scale(1.05);
+}
+
+.rotate-right{
+    transform:rotate(4deg);
+}
+
+.rotate-left{
+    transform:rotate(-5deg);
+}
+
+.polaroid img{
+
+    width:100%;
+
+    display:block;
+}
+
+.polaroid p{
+
+    color:#555;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-style:italic;
+}
+/* ====================== */
+/* MEMORY GALLERY */
+/* ====================== */
+
+.memory-page{
+
+    width:100%;
+    min-height:100vh;
+
+    padding:100px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:80px;
+
+    overflow-y:auto;
+}
+
+.memory-page h1{
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes',cursive;
+
+    text-shadow:
+    0 0 15px rgba(179,0,32,.5);
+}
+
+.memory-card{
+
+    position:relative;
+
+    width:380px;
+
+    background:white;
+
+    padding:15px 15px 35px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.4);
+
+    transition:.4s;
+}
+
+.memory-card:hover{
+
+    transform:
+    scale(1.03)
+    rotate(0deg);
+}
+
+.memory-card.left{
+    transform:rotate(-4deg);
+}
+
+.memory-card.right{
+    transform:rotate(4deg);
+}
+
+.memory-card img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:5px;
+}
+
+.tape{
+
+    position:absolute;
+
+    top:-12px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:80px;
+
+    height:25px;
+
+    background:
+    rgba(255,255,255,.4);
+
+    backdrop-filter:blur(3px);
+
+    border-radius:3px;
+}
+
+.title{
+
+    margin-top:20px;
+
+    color:#111;
+
+    text-align:center;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+}
+
+.caption{
+
+    margin-top:15px;
+
+    color:#555;
+
+    text-align:center;
+
+    line-height:1.8;
+}
+/* GAME PAGE */
+
+.game-container{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.game-container h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    color:#b30020;
+}
+
+#score{
+
+    margin-top:20px;
+
+    font-size:1.3rem;
+}
+
+#game-area{
+
+    width:100%;
+    height:70vh;
+
+    position:relative;
+}
+
+.heart{
+
+    position:absolute;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    animation:float 6s linear forwards;
+}
+
+@keyframes float{
+
+    from{
+        transform:translateY(100px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(-500px);
+        opacity:1;
+    }
+
+}
+
+#win-message{
+
+    display:none;
+
+    text-align:center;
+
+    max-width:600px;
+}
+
+#win-message h2{
+
+    color:#ff4d6d;
+
+    margin-bottom:20px;
+}
+/* ====================== */
+/* 20 MESSAGES */
+/* ====================== */
+
+.messages-page{
+
+    width:100%;
+    min-height:100vh;
+
+    padding:100px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    overflow-y:auto;
+}
+
+.messages-page h1{
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes',cursive;
+
+    margin-bottom:60px;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 15px rgba(179,0,32,.5);
+}
+
+.messages-container{
+
+    width:min(900px,90%);
+}
+
+.message-card{
+
+    margin-bottom:20px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    color:#f1f1f1;
+
+    line-height:1.8;
+
+    backdrop-filter:blur(10px);
+}
+
+.final-message{
+
+    border:1px solid #b30020;
+
+    box-shadow:
+    0 0 30px rgba(179,0,32,.35);
+
+    font-size:1.1rem;
+}
+/* ====================== */
+/* ENDING PAGE */
+/* ====================== */
+
+.ending-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.ending-card{
+
+    width:min(900px,90%);
+
+    padding:60px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    backdrop-filter:blur(10px);
+
+    text-align:center;
+
+    box-shadow:
+    0 0 40px rgba(179,0,32,.2);
+}
+
+.ending-date{
+
+    color:#bfa27a;
+
+    letter-spacing:3px;
+}
+
+.ending-card h1{
+
+    margin-top:20px;
+
+    margin-bottom:40px;
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes',cursive;
+
+    text-shadow:
+    0 0 15px rgba(179,0,32,.5);
+}
+
+.ending-card p{
+
+    color:#e5e5e5;
+
+    line-height:2;
+
+    font-size:1.15rem;
+}
+/* ====================== */
+/* FINAL PAGE */
+/* ====================== */
+
+.final-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:30px;
+}
+
+.glow{
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(179,0,32,.25),
+        transparent 70%
+    );
+
+    animation:pulse 4s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.final-content{
+
+    text-align:center;
+
+    max-width:800px;
+
+    z-index:2;
+}
+
+.final-content h1{
+
+    font-size:5rem;
+
+    color:#b30020;
+
+    font-family:'Great Vibes',cursive;
+
+    margin-bottom:50px;
+
+    text-shadow:
+    0 0 15px rgba(179,0,32,.5);
+}
+
+.final-text p{
+
+    margin-bottom:30px;
+
+    line-height:2;
+
+    color:#f1f1f1;
+
+    font-size:1.2rem;
+}
+
+.special{
+
+    font-size:1.4rem;
+
+    color:#ffffff;
+}
+
+.ending-love{
+
+    font-size:3rem;
+
+    color:#ff4d6d;
+
+    font-family:'Great Vibes',cursive;
+
+    margin-top:50px;
+}
+
+.signature{
+
+    color:#bfa27a;
+}
+
+/* fade animation */
+
+.fade{
+
+    opacity:0;
+
+    animation:fadeIn 2s forwards;
+}
+
+.delay1{
+    animation-delay:1s;
+}
+
+.delay2{
+    animation-delay:4s;
+}
+
+.delay3{
+    animation-delay:7s;
+}
+
+.delay4{
+    animation-delay:10s;
+}
+
+.delay5{
+    animation-delay:13s;
+}
+
+.delay6{
+    animation-delay:16s;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* ====================== */
+/* INTRO SCREEN */
+/* ====================== */
+
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050505;
+
+    z-index:99999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.intro-content h1{
+
+    font-size:6rem;
+
+    margin-bottom:20px;
+}
+
+.intro-content p{
+
+    color:#d8d8d8;
+
+    margin-bottom:25px;
+
+    font-size:1.2rem;
+}
+
+#startBtn{
+
+    padding:15px 40px;
+}
+/* ====================== */
+/* ROSE OPENING */
+/* ====================== */
+
+#roseTransition{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050505;
+
+    z-index:100000;
+
+    display:none;
+
+    overflow:hidden;
+}
+
+.rose{
+
+    position:absolute;
+
+    font-size:120px;
+
+    opacity:0;
+}
+
+.rose1{
+    left:5%;
+    top:15%;
+}
+
+.rose2{
+    left:25%;
+    top:65%;
+}
+
+.rose3{
+    left:45%;
+    top:20%;
+}
+
+.rose4{
+    left:65%;
+    top:70%;
+}
+
+.rose5{
+    left:80%;
+    top:30%;
+}
+
+.rose6{
+    left:90%;
+    top:60%;
+}
+
+.opening .rose{
+
+    animation:roseBloom 2.5s ease forwards;
+}
+
+@keyframes roseBloom{
+
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+
+    40%{
+        opacity:1;
+        transform:scale(1.5);
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(4);
+    }
+}
